@@ -185,3 +185,9 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[user]
+	name = Wiratama Ciputra
+	email = wiratama.dc@gmail.com
+	signingkey = 8D9970AD6B9CB723955002E7C7D47C3B0617C417
+[gpg]
+	program = /opt/local/bin/gpg2
