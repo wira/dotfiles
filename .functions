@@ -169,3 +169,14 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# Correct permission for files and folders
+function fixpms() {
+	find . -type d -exec chmod 755 {} +;
+	find . -type f -exec chmod 644 {} +;
+}
+
+# Find port in use
+function fpiu () {
+  lsof -i tcp:$@
+}
