@@ -180,3 +180,8 @@ function fixpms() {
 function fpiu () {
   lsof -i tcp:$@
 }
+
+# Homestead
+function homestead() {
+	( cd ~/Homestead && vagrant $* )
+}
