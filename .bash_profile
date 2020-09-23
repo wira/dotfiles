@@ -34,8 +34,11 @@ elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
 fi;
 
-if [ -f /usr/local/git/contrib/completion ]; then
+if [ -f /usr/local/git/contrib/completion/git-prompt.sh ]; then
         source /usr/local/git/contrib/completion/git-prompt.sh;
+fi;
+
+if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
 	source /usr/local/git/contrib/completion/git-completion.bash;
 fi;
 
