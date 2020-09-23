@@ -34,9 +34,9 @@ elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
 fi;
 
-if [-f /usr/local/git/contrib/completion/]; then
-        source /usr/local/git/contrib/completion/git-prompt.sh
-	source /usr/local/git/contrib/completion/git-completion.bash
+if [ -f /usr/local/git/contrib/completion ]; then
+        source /usr/local/git/contrib/completion/git-prompt.sh;
+	source /usr/local/git/contrib/completion/git-completion.bash;
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
